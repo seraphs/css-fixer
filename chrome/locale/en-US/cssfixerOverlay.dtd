@@ -1,0 +1,8 @@
+<!ENTITY cssfixer.menu.label         "Cssfixer">
+<!ENTITY cssfixer.menuItem.label     "Open Cssfixer">
+<!ENTITY cssfixer.menuItem.exit      "Shut Down Cssfixer">
+<!ENTITY cssfixer.menuItem.innerfix  "Open Inner Fixing">
+<!ENTITY cssfixer.menu.accesskey     "x">
+<!ENTITY cssfixer.menuItem.accesskey "n">
+<!ENTITY cssfixer.menuItem.exit.accesskey "s">
+<!ENTITY cssfixer.menuItem.innerfix.accesskey "O">

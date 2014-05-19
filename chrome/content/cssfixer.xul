@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="chrome://global/skin/" ?>
+<?xml-stylesheet type="text/css" href="chrome://cssfixer/skin/cssfixer.css" ?>
+
+<!DOCTYPE overlay SYSTEM
+  "chrome://cssfixer/locale/cssfixerOverlay.dtd">
+<overlay id="cssfixer-browser-overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+    <script type="application/x-javascript"
+      src="chrome://cssfixer/content/cssfixer.js" />
+    <script type="application/x-javascript"
+      src="chrome://cssfixer/content/preferences.js" />
+
+    <stringbundleset id="stringbundleset">
+      <stringbundle id="cssfixer-string-bundle"
+        src="chrome://cssfixer/locale/cssfixerOverlay.properties" />
+    </stringbundleset>
+
+    <menupopup id="menuWebDeveloperPopup">
+      <menuseparator id="cssfixer-extension-separator1"/>
+      <menuitem id="cssfixer-menu-execute"
+              label="&cssfixer.menuItem.label;"
+              oncommand="cssfixer.BrowserOverlay.execute(event);" />
+    </menupopup>
+    
+</overlay>

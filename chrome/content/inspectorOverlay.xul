@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="chrome://global/skin/" ?>
+<?xml-stylesheet type="text/css" href="chrome://cssfixer/skin/cssfixer.css" ?>
+
+<!DOCTYPE overlay SYSTEM
+  "chrome://cssfixer/locale/cssfixerOverlay.dtd">
+<overlay id="cssfixer-browser-overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+    <script type="application/x-javascript"
+      src="chrome://cssfixer/content/sideInspector.js" />
+
+    <menubar id="main-menubar">
+      <menu id="cssfixer-menu" label="&cssfixer.menu.label;" accesskey="&cssfixer.menu.accesskey;" insertafter="helpMenu">
+          <menupopup>
+            <menuitem id="cssfixer-menu-execute"
+              label="&cssfixer.menuItem.label;"
+              accesskey="&cssfixer.menuItem.accesskey;"
+              oncommand="cssfixer.BrowserOverlay.execute(event);" />
+            <menuitem id="cssfixer-menu-exit"
+              label="&cssfixer.menuItem.exit;"
+              accesskey="&cssfixer.menuItem.exit.accesskey;"
+              oncommand="cssfixer.BrowserOverlay.exit(event);" />
+          </menupopup>
+      </menu>
+    </menubar>
+    
+</overlay>

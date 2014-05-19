@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+
+<overlay id="cssfixer-scratchpad-overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+    <script type="application/x-javascript"
+      src="chrome://cssfixer/content/scratchpad/scratchpad.js" />
+
+    <commandset id="sp-commandset">
+        <command id="sp-cmd-saveas" oncommand="scratchpadOverlay.saveFileAs();"/>
+        <command id="sp-cmd-save" oncommand="scratchpadOverlay.saveFile();"/>
+    </commandset>
+      
+    <menupopup id="sp-menu-filepopup">
+        <menuitem id="sp-menu-format-save"
+                label="Format save"
+                accesskey="F"
+                insertafter="sp-menu-saveas"
+                oncommand="scratchpadOverlay.test(event)"/>
+        <menuitem id="sp-menu-save"
+                label="Save"
+                accesskey="S" />
+        <menuitem id="sp-menu-saveas"
+                label="Save as"
+                accesskey="S"
+                />
+    </menupopup>
+
+    
+</overlay>
